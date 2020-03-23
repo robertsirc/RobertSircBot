@@ -1,0 +1,10 @@
+# Twitter API
+CONSUMER_API_KEY = ''
+CONSUMER_API_SECRET_KEY = ''
+
+ACCESS_TOKEN = ''
+ACCESS_TOKEN_SECRET = ''
+
+# App Configuration
+URL = ''
+DATE_FORMAT = ''
