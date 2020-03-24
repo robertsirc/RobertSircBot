@@ -1,7 +1,7 @@
 import xml.etree.ElementTree
 import datetime
 from dataclasses import dataclass
-from configuration import *
+from configuration import URL, DATE_FORMAT
 import requests
 
 
