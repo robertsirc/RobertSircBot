@@ -6,13 +6,13 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
 
-def see_if_tweet_exist(url):
+def see_if_tweet_exist(post_url):
     tweets = api.user_timeline()
     for tweet in tweets:
         if tweet['entities']['urls']:
             urls = tweet['entities']['urls']
             for url in urls:
-                if url['expanded_url'] == url:
+                if url['expanded_url'] == post_url:
                     return True
     return False
 
